@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furry Tails Meycauayan</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-section {
+            background-image: url('https://placehold.co/1920x1080/e9d5ff/8b5cf6?text=Happy+Pets!');
+            background-size: cover;
+            background-position: center;
+        }
+        .modal-overlay {
+            transition: opacity 0.3s ease-in-out;
+        }
+        .modal-container {
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-orange-50">
+
+    <!-- ...existing code... -->
+<header class="bg-white shadow-md sticky top-0 z-40">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold" style="color: #ffb64a;">
+            <i class="fas fa-paw mr-2"></i>Furry Tails Meyauayan
+        </a>
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center space-x-6">
+            <a href="#home" class="text-gray-600 hover:text-green-600">Home</a>
+            <a href="#about" class="text-gray-600 hover:text-green-600">Kennel</a>
+            <a href="#services" class="text-gray-600 hover:text-green-600">Services</a>
+            <a href="#contact" class="text-gray-600 hover:text-green-600">Contact</a>
+        </div>
+        <!-- Mobile Nav Button -->
+        <button id="mobileMenuBtn" class="md:hidden text-2xl text-orange-400 focus:outline-none">
+            <i class="fas fa-bars"></i>
+        </button>
+        <button id="registerBtn" style="background-color: #ffb64a;" class="hidden md:inline-block text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-600 transition duration-300">
+            Download App
+        </button>
+    </nav>
+    <!-- Mobile Nav Menu -->
+    <div id="mobileMenu" class="md:hidden bg-white px-4 py-2 absolute w-full left-0 top-full shadow-lg hidden z-50">
+        <a href="#home" class="block py-2 text-gray-600 hover:text-green-600">Home</a>
+        <a href="#about" class="block py-2 text-gray-600 hover:text-green-600">Kennel</a>
+        <a href="#services" class="block py-2 text-gray-600 hover:text-green-600">Services</a>
+        <a href="#contact" class="block py-2 text-gray-600 hover:text-green-600">Contact</a>
+        <button id="registerBtnMobile" style="background-color: #ffb64a;" class="w-full mt-2 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-600 transition duration-300">
+            Download App
+        </button>
+    </div>
+</header>
+<!-- ...existing code... -->
+
+<!-- Home Section -->
+<!-- ...existing code... -->
+<section
+    id="home"
+    class="min-h-[40vh] md:min-h-[60vh] flex items-center bg-center bg-cover bg-no-repeat"
+    style="background-image: url('Tagline.jpg');"
+>
+    <!-- You can add content here if needed -->
+</section>
+<!-- ...existing code... -->
+
+<!-- Kennel Section -->
+<section id="about" class="py-10 md:py-16">
+    <div class="container mx-auto px-4 md:px-6">
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-6 md:mb-10">Kennel</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-24 justify-items-center">
+            <!-- Product Card 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                <img src="large.png" alt="Large" class="w-full h-40 md:h-48 object-cover">
+                <div class="p-4 md:p-6">
+                    <h3 class="font-bold text-lg md:text-xl mb-2">Large Kennel</h3>
+                    <p class="text-gray-600 text-sm md:text-base">We’ve rounded up the best dog crates for large, X-large, and giant breeds.</p>
+                    <span class="font-bold text-base md:text-lg text-orange-600">&#8369 700 - 900</span>
+                </div>
+            </div>
+            <!-- Kennel Card 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                <img src="small.png" alt="Cat Bed" class="w-full h-40 md:h-48 object-cover">
+                <div class="p-4 md:p-6">
+                    <h3 class="font-bold text-lg md:text-xl mb-2">Small Kennel</h3>
+                    <p class="text-gray-600 text-sm md:text-base">Small dog's and cat's kennels provide a secure environment for your little companion.</p>
+                    <span class="font-bold text-base md:text-lg text-orange-600">&#8369 650</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ...existing code... -->
+
+<!-- Services Section -->
+<section id="services" class="bg-white py-10 md:py-16">
+    <div class="container mx-auto px-4 md:px-6">
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-6 md:mb-10">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center">
+            <div class="p-4 md:p-6">
+                <i class="fas fa-cut text-4xl md:text-5xl text-orange-500 mb-4"></i>
+                <h3 class="text-lg md:text-xl font-bold mb-2">Pet Grooming</h3>
+                <p class="text-gray-600 text-sm md:text-base">Professional grooming services to keep your pet looking its best.</p>
+            </div>
+            <div class="p-4 md:p-6">
+                <i class="fas fa-bone text-4xl md:text-5xl text-orange-500 mb-4"></i>
+                <h3 class="text-lg md:text-xl font-bold mb-2">Dog Vaccination</h3>
+                <p class="text-gray-600 text-sm md:text-base">Key tool in improving and maintaining individual and public health, vaccines significantly decrease the rates of severe disease, complications, and death associated with infections.</p>
+            </div>
+            <div class="p-4 md:p-6">
+                <i class="fas fa-cat text-4xl md:text-5xl text-orange-500 mb-4"></i>
+                <h3 class="text-lg md:text-xl font-bold mb-2">Cat Vaccination</h3>
+                <p class="text-gray-600 text-sm md:text-base">One of the most effective ways to protect your cat from serious and potentially life-threatening diseases is through timely and appropriate vaccinations.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ...existing code... -->
+
+<!-- Footer -->
+<footer id="contact" class="bg-gray-800 text-white py-8 md:py-10">
+    <div class="container mx-auto px-4 md:px-6 text-left">
+        <p>&copy; 2023 Furry Tails Meycauayan. All Rights Reserved.</p>
+        <div class="flex flex-col md:flex-row md:space-x-4 mt-4 space-y-2 md:space-y-0">
+            <a href="#" class="hover:text-orange-400 flex items-center"><i class="fab fa-facebook-f mr-2"></i>Furry Tails Meycauayan</a>
+            <a href="#" class="hover:text-orange-400 flex items-center"><i class="fa fa-phone mr-2"></i>09178058656</a>
+            <a href="#" class="hover:text-orange-400 flex items-center"><i class="fas fa-map-marker-alt mr-2"></i>27 Calle Fabrica Street, Malhacan, Meycauayan, Philippines</a>
+            <a href="#" class="hover:text-orange-400 flex items-center"><i class="fa fa-envelope mr-2"></i>furrytailsmeycauayan@gmail.com</a>
+        </div>
+    </div>
+</footer>
+<!-- ...existing code... -->
+
+<!-- Application Modal -->
+<div id="registrationModal" class="modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-2 md:p-4 hidden">
+    <div class="modal-container bg-white w-full max-w-xs md:max-w-lg mx-auto rounded-lg shadow-xl z-50 transform scale-95">
+        <!-- Modal Header -->
+        <div class="flex justify-between items-center p-4 md:p-5 border-b rounded-t">
+            <h3 class="text-xl md:text-2xl font-semibold text-gray-900">
+                Click here to download
+            </h3>
+            <button id="closeModalBtn" type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </button>
+        </div>
+        <!-- Modal Body -->
+        <div class="p-4 md:p-6">
+            <form id="registrationForm" class="space-y-4">
+                <p>
+                    Ready to register and book for your pet? You can do it online now!
+                    <a href="https://drive.google.com/file/d/1UU4V6RUNloixGO8qHZBBr76gKjTFUPVw/view?usp=sharing" class="text-blue-600 hover:underline" download>
+                        Click here to get started.
+                    </a>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- ...existing code... -->
+
+<script>
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Register button for mobile
+    const registerBtnMobile = document.getElementById('registerBtnMobile');
+    registerBtnMobile.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        openModal();
+    });
+
+    // ...existing modal script...
+</script>
+<!-- ...existing code... -->
